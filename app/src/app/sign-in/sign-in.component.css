@@ -1,0 +1,22 @@
+
+:host{
+  display: block;
+  margin-top: 20px;
+}
+
+form{
+  display: flex;
+  row-gap: 50px;
+
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > mat-form-field {
+  width: 100%;
+}
+
+

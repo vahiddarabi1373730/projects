@@ -1,0 +1,27 @@
+:host ::ng-deep{
+  .mat-mdc-form-field-error-wrapper{
+    top: unset;
+    bottom: 0px !important;
+  }
+}
+:host{
+  display: block;
+  margin-top: 20px;
+}
+
+form{
+  display: flex;
+  row-gap: 50px;
+
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > mat-form-field {
+  width: 100%;
+}
+
+

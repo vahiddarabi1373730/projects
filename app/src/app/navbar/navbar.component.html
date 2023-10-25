@@ -1,0 +1,12 @@
+<nav mat-tab-nav-bar [tabPanel]="tabPanel">
+  <ng-container *ngIf="allServicesService.isLogin$$ | async as data;else doestLogin">
+    <a mat-tab-link *ngFor="let link of links2" [routerLink]="link" (click)="onClick(link)" routerLinkActive="active"
+      [active]="activeLink == link"> {{link}} </a>
+  </ng-container>
+  <ng-template #doestLogin>
+    <a mat-tab-link *ngFor="let link of links" (click)="onClick(link)" [routerLink]="link==='signIn' ? link : ''"
+      routerLinkActive="active" [active]="activeLink == link">
+      {{link}} </a>
+  </ng-template>
+</nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
