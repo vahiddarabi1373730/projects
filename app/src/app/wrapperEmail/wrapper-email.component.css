@@ -1,0 +1,11 @@
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+section .index,
+section .place-holder {
+    max-width: 50%;
+}
